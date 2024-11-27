@@ -1,0 +1,32 @@
+/* Imports */
+
+
+/* Configuration */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a, li, button, img {
+    all: unset;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Variables */
+:root {
+    --bg-color: #151515;
+    --text-color: white;
+}
+
+/* Off screen menu */
+.off-screen-menu {
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: 80%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+}

@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-a, button, li {
+a, button, li, img {
     cursor: pointer;
     all: unset;
     list-style: none;
@@ -80,7 +80,7 @@ header > img:first-child {
 .category {
     border: 2px solid var(--bg-stoy);
     color: var(--text-color);
-    border-radius: 15%;
+    border-radius: 16px;
     padding: 1rem;
 }
 
