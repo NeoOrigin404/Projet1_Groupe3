@@ -66,13 +66,17 @@ header>img:first-child {
 }
 
 .story_picture > img {
+    height: 50px;
+    object-fit: contain;
+}
+
+.photo {
     width: 56px;
-    height: auto;
     padding-bottom: 4px;
     border-radius: 30%;
 }
 
-.story_picture > p {
+.username {
     color: var(--text-color);
     background-color: var(--bg-stoy);
     border-radius: 15%;
@@ -94,12 +98,6 @@ header>img:first-child {
     color: var(--text-color);
     border-radius: 8px;
     padding: 0.2rem;
-}
-
-/* A faire en JS */
-.category:hover {
-    background-color: var(--bgcolor-category);
-    color: var(--text-color);
 }
 
 .category > h2 { 
