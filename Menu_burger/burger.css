@@ -29,4 +29,29 @@ a, li, button, img {
     position: fixed;
     top: 0;
     right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    font-size: 2rem;
+    transition: 0.5s ease;
+    gap: 2rem;
+}
+
+.off-screen-menu > img {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+}
+
+.off-screen-menu.active {
+    right: 0;
+}
+
+/* Nav */
+nav {
+    padding: 1rem;
+    display: flex;
+    background-color: var(--bg-color);
 }
