@@ -12,7 +12,7 @@ function mobileMenu() {
 // Fermeture du menu
 const navLink = document.querySelector(".nav-link");
 
-navLink.forEach((e) => e.addEventListenerAll("click", closeMenu));
+navLink.forEach((e) => e.addEventListener("click", closeMenu));
 
 function closeMenu() {
   activation.classList.remove("active");

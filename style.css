@@ -107,3 +107,8 @@ h2 {
   border: 2px solid var(--bg-stoy);
   border-radius: 16px;
 }
+
+h2.active {
+  background-color: var(--bgcolor-category);
+  color: var(--text-color);
+}
