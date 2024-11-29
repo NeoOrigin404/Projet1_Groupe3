@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 1px solid red;
+}
+
+body {
+    background-color: black;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h1 {
+    color: white;
+    padding-top: 3rem;
+    margin-left: 3rem;
+    text-align: center;
+}
+
+
+.conteneur {
+    display: flex;
+}
+
+img {
+    height: auto;
+    width: 6rem;
+    margin: 24px;
+    border-radius: 1rem;
+}
+
+.deuxpremieres {
+    display: flex;
+}
+
+.deuxdernieres {
+    display: flex;
+}
+
+.deuxpremieres, .deuxdernieres {
+    display: flex; /* Active le mode Flexbox */
+    justify-content: center; /* Centre les images horizontalement */
+    gap: 15px; /* Espacement entre les images */
+    flex-wrap: wrap; /* Permet aux images de s’ajuster si l’espace manque */
+}
+
+.divbarre {
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: gray;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    opacity: 70%;
+    border-radius: 16px;
+}
+
+.image {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 8px;
+}
+
+.barre {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-size: 1.5rem;
+}
+
+.follower {
+    opacity: 70%;
+}
+
+.live {
+    background-color: orange;
+    color: white;
+    border-radius: 16px; 
+}

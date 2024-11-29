@@ -3,3 +3,44 @@
     margin: 0;
     box-sizing: border-box;
 }
+section {
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    background-color: gray;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    opacity: 70%;
+    border-radius: 16px;
+}
+
+.image {
+    height: 3rem;
+    border-radius: 8px;
+}
+
+.barre {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-size: 1.5rem;
+}
+
+.follower {
+    opacity: 70%;
+}
+
+.live {
+    background-color: orange;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
