@@ -113,6 +113,7 @@ header > img:last-child {
   color: var(--text-color);
   border-radius: 8px;
   padding: 0.2rem;
+  outline: 3px red solid;
 }
 
 h2 {
@@ -127,8 +128,8 @@ h2 {
 
 h2.active {
   background-color: #ff633f;
-  color: #ff633f;
-  height: 4rem;
+  /* color: #ff633f; */
+  /* height: 4rem; */
 }
 
 /* BARRE DE MENU */
@@ -262,17 +263,19 @@ button {
 .stats {
   margin-top: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 1rem;
   background-color: var(--bg-stoy);
   border-radius: 10px;
   height: 3rem;
   width: 20rem;
-}
-
-.stats button {
   color: white;
   font-family: "Work Sans", sans-serif;
   font-size: 1.2rem;
+}
+
+.img-user {
+  height: 3rem;
+  border-radius: 10px;
 }

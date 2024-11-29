@@ -1,3 +1,5 @@
+console.log("scrpit chargeé");
+
 // Tableau des stories
 const tableauStories = [
   {
@@ -98,21 +100,6 @@ icons.forEach((icon) => {
     icon.classList.add("active");
   });
 });
-// ancien carroussel
-// const slidesContainer = document.getElementById("slides-container");
-// const slide = document.querySelector(".slide");
-// const prevButton = document.getElementById("slide-arrow-prev");
-// const nextButton = document.getElementById("slide-arrow-next");
-
-// nextButton.addEventListener("click", () => {
-//   const slideWidth = slide.clientWidth;
-//   slidesContainer.scrollLeft += slideWidth;
-// });
-
-// prevButton.addEventListener("click", () => {
-//   const slideWidth = slide.clientWidth;
-//   slidesContainer.scrollLeft -= slideWidth;
-// });
 
 // CAROUSEL
 
@@ -175,18 +162,16 @@ track.addEventListener("touchend", (e) => {
 });
 
 // dynamisme catégories
-const categories = document.querySelectorAll(".category .category_name");
+const categories = Array.from(document.getElementsByTagName("h2"));
 //console log pour verifier
 console.log("Categories :", categories);
 
-categories.forEach((category) => {
-  category.addEventListener("click", () => {
+categories.forEach((h2) => {
+  h2.addEventListener("click", () => {
     //console log pour voir l'élément cliqué
-    console.log("Clicked category", category);
+    console.log("Clicked category", h2);
 
     categories.forEach((i) => i.classList.remove("active"));
-    category.classList.add("active");
+    h2.classList.add("active");
   });
 });
-
-// test
