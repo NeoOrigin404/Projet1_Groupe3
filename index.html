@@ -6,18 +6,39 @@
     <link rel="stylesheet" href="style.css" />
     <title>Projet 1 - Groupe 3</title>
   </head>
+
   <body>
-    <!-- HEADER A SUPPRIMER POUR LA COMPILATION -->
+    <!-- Header -->
     <header>
-      <div>
-        <ul>
-          <li><img src="/assets/user_photo.jpg" id="img-user" /></li>
-          <li><h1>LOGO</h1></li>
-          <li><img src="/assets/search_icon.svg" id="img-search" /></li>
-        </ul>
-      </div>
+      <img src="/img/picture_profil.jpg" alt="photo_de_profile" />
+      <img
+        src="https://seeklogo.com/images/R/reddit-logo-23F13F6A6A-seeklogo.com.png"
+        alt="logo_reddit"
+      />
+      <img src="/img/loupe.svg" alt="photo_de_loupe" />
     </header>
+
+    <!-- Main -->
     <main>
+      <!-- Stories -->
+      <div class="stories">
+        <div class="story_picture">
+          <img
+            class="photo"
+            src="url('https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp')"
+            alt="Story picture"
+          />
+          <p class="username">John Doe</p>
+        </div>
+      </div>
+
+      <!-- Categories -->
+      <div class="categories">
+        <!-- Créer button au lieu de div -->
+        <button class="category">
+          <h2 class="category_name">Popular</h2>
+        </button>
+      </div>
       <!-- structure du carrousel -->
       <section class="section_carousel">
         <div class="carousel-track">
@@ -28,6 +49,13 @@
         <!-- pagination-->
         <div class="carousel-pagination"></div>
       </section>
+      <section class="under-content">
+        <div class="stats">
+          <button>Like 🧡</button>
+          <button>Comment 📝</button>
+          <button>Share 📤</button>
+        </div>
+      </section>
     </main>
     <div class="bottom-menu">
       <button><img src="/assets/house_icon.svg" class="icon active" /></button>
@@ -36,6 +64,7 @@
       <button><img src="/assets/notif_icon.svg" class="icon" /></button>
       <button><img src="/assets/rocket_icon.png" class="icon" /></button>
     </div>
-    <script src="/script.js" defer></script>
+
+    <script src="/script.js"></script>
   </body>
 </html>
