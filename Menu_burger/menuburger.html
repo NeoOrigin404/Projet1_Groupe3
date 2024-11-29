@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="burger.css">
     <title>Menu burger</title>
 </head>
+
 <body>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <img src="/img/picture_profil.jpg" alt="Photo de profile de l'utilisateur" class="picture_profil">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Profil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Favoris</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Messages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Notifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Monétisation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Paramètres</a>
+                </li>
+            </ul>
+        </nav>
 
-    <div class="off-screen-menu">
-        <div class="burger-menu">
-            <a href="/icon/profile.svg">Profil</a>
-            <a href="/icon/favoris.svg">Favoris</a>
-            <a href="/icon/message.svg">Messages</a>
-            <a href="/icon/notifications.svg">Notifications</a>
-            <a href="/icon/dollar.svg">Monétisation</a>
-            <a href="/icon/parametres.svg">Paramètres</a>
+        <div class="activation1">
+            <img src="/img/picture_profil.jpg" alt="activation" class="activation">
         </div>
-    </div>
 
-    <nav role="navigation">
-        <div class="ham-menu">
-            <!-- <img src="https://photoaid.com/en/tools/_next/static/images/before-25ed01ce5b208e9df51888c519ef7949.webp" alt="Picture profil"> -->
-        </div>
-    </nav>
+    </header>
     <script src="/menu_burger/burger.js" defer></script>
 </body>
+
 </html>
