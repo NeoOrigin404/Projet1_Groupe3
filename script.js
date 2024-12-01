@@ -87,3 +87,33 @@ function createdCategory(createCategory) {
 
 // Execution de la fonction
 createdCategory(tableauCategories);
+
+// Tableau des posts
+const posts = [
+  {
+    author: "Ahsoka Tano",
+    profilPicture: "",
+    description: "Que la Force soit avec vous !",
+    pictures: [""],
+    date: "02/12/24",
+    likes: 42,
+    comments: [
+      {
+        author: "Obi-Wan Kenobi",
+        profilPicture: "",
+        commentaire: "May the Force be with you",
+        likes: 3,
+      },
+        author: "Gandalf",
+        profilPicture: "",
+        commentaire: "Je crois que je me suis trompé de film !",
+        likes: 42,
+      {
+        author: "Général Grievous",
+        profilPicture: "",
+        commentaire: "Général Kenobi !!",
+        likes: 66,
+      },
+    ],
+  },
+];
