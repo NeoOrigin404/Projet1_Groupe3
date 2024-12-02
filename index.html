@@ -4,71 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Projet 1 - Groupe 3</title>
+    <html lang="fr">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Projet 1 - Groupe 3</title>
+      </head>
+
+      <body>
+        <!-- Header -->
+        <header>
+          <img src="/img/picture_profil.jpg" alt="photo_de_profile" />
+          <img
+            src="https://seeklogo.com/images/R/reddit-logo-23F13F6A6A-seeklogo.com.png"
+            alt="logo_reddit"
+          />
+          <img src="/img/loupe.svg" alt="photo_de_loupe" />
+        </header>
+
+        <!-- Main -->
+        <main>
+          <!-- Stories -->
+          <div class="stories">
+            <div class="story_picture">
+              <img
+                class="photo"
+                src="url('https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp')"
+                alt="Story picture"
+              />
+              <p class="username">John Doe</p>
+            </div>
+          </div>
+
+          <!-- Categories -->
+          <div class="categories">
+            <!-- Créer button au lieu de div -->
+            <button class="category">
+              <h2 class="category_name">Popular</h2>
+            </button>
+          </div>
+          <!-- structure du carrousel -->
+          <section class="section_carousel">
+            <div class="carousel-track">
+              <img src="/assets/img_content.jpg" class="carousel-item" alt="" />
+              <img
+                src="/assets/img_content2.jpg"
+                class="carousel-item"
+                alt=""
+              />
+              <img
+                src="/assets/img_content3.jpg"
+                class="carousel-item"
+                alt=""
+              />
+            </div>
+            <!-- pagination-->
+            <div class="carousel-pagination"></div>
+          </section>
+          <section class="under-content">
+            <div class="stats">
+              <img
+                src="assets/free-photo-of-noir-et-blanc-nature-mode-homme.jpeg"
+                class="img-user"
+              />
+              <p class="username">User</p>
+              <p class="likes">Likes 🧡</p>
+              <a class="live">Live 🔴</a>
+            </div>
+          </section>
+        </main>
+        <div class="bottom-menu">
+          <button><img src="/assets/home.svg" class="icon active" /></button>
+          <button><img src="/assets/message_icon.png" class="icon" /></button>
+          <button><img src="/assets/plus_icon.svg" class="icon" /></button>
+          <button><img src="/assets/notif_icon.svg" class="icon" /></button>
+          <button><img src="/assets/rocket_icon.png" class="icon" /></button>
+        </div>
+
+        <script src="/script.js"></script>
+      </body>
+    </html>
   </head>
-
-  <body>
-    <!-- Header -->
-    <header>
-      <img src="/img/picture_profil.jpg" alt="photo_de_profile" />
-      <img
-        src="https://seeklogo.com/images/R/reddit-logo-23F13F6A6A-seeklogo.com.png"
-        alt="logo_reddit"
-      />
-      <img src="/img/loupe.svg" alt="photo_de_loupe" />
-    </header>
-
-    <!-- Main -->
-    <main>
-      <!-- Stories -->
-      <div class="stories">
-        <div class="story_picture">
-          <img
-            class="photo"
-            src="url('https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp')"
-            alt="Story picture"
-          />
-          <p class="username">John Doe</p>
-        </div>
-      </div>
-
-      <!-- Categories -->
-      <div class="categories">
-        <!-- Créer button au lieu de div -->
-        <button class="category">
-          <h2 class="category_name">Popular</h2>
-        </button>
-      </div>
-      <!-- structure du carrousel -->
-      <section class="section_carousel">
-        <div class="carousel-track">
-          <img src="/assets/img_content.jpg" class="carousel-item" alt="" />
-          <img src="/assets/img_content2.jpg" class="carousel-item" alt="" />
-          <img src="/assets/img_content3.jpg" class="carousel-item" alt="" />
-        </div>
-        <!-- pagination-->
-        <div class="carousel-pagination"></div>
-      </section>
-      <section class="under-content">
-        <div class="stats">
-          <img
-            src="assets/free-photo-of-noir-et-blanc-nature-mode-homme.jpeg"
-            class="img-user"
-          />
-          <p class="username">User</p>
-          <p class="likes">Likes 🧡</p>
-          <a class="live">Live 🔴</a>
-        </div>
-      </section>
-    </main>
-    <div class="bottom-menu">
-      <button><img src="/assets/house_icon.svg" class="icon active" /></button>
-      <button><img src="/assets/message_icon.png" class="icon" /></button>
-      <button><img src="/assets/plus_icon.svg" class="icon" /></button>
-      <button><img src="/assets/notif_icon.svg" class="icon" /></button>
-      <button><img src="/assets/rocket_icon.png" class="icon" /></button>
-    </div>
-
-    <script src="/script.js" defer></script>
-  </body>
 </html>

@@ -163,15 +163,42 @@ track.addEventListener("touchend", (e) => {
 
 // dynamisme catégories
 const categories = Array.from(document.getElementsByTagName("h2"));
-//console log pour verifier
-console.log("Categories :", categories);
 
 categories.forEach((h2) => {
   h2.addEventListener("click", () => {
-    //console log pour voir l'élément cliqué
-    console.log("Clicked category", h2);
-
     categories.forEach((i) => i.classList.remove("active"));
     h2.classList.add("active");
   });
 });
+
+// Tableau des posts
+const posts = [
+  {
+    author: "Ahsoka Tano",
+    profilPicture: "",
+    description: "Que la Force soit avec vous !",
+    pictures: [""],
+    date: "02/12/24",
+    likes: 42,
+    comments: [
+      {
+        author: "Obi-Wan Kenobi",
+        profilPicture: "",
+        commentaire: "May the Force be with you",
+        likes: 3,
+      },
+      {
+        author: "Gandalf",
+        profilPicture: "",
+        commentaire: "Je crois que je me suis trompé de film !",
+        likes: 42,
+      },
+      {
+        author: "Général Grievous",
+        profilPicture: "",
+        commentaire: "Général Kenobi !!",
+        likes: 66,
+      },
+    ],
+  },
+];

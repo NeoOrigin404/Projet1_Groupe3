@@ -47,7 +47,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 0.8rem;
+  padding-top: 3rem;
 }
 
 header > img {
@@ -87,7 +87,7 @@ header > img:last-child {
 .photo {
   width: 56px;
   padding-bottom: 4px;
-  border-radius: 50%;
+  border-radius: 16px;
 }
 
 .username {
@@ -145,16 +145,16 @@ h2.active {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(
+  /* background: linear-gradient(
     0deg,
     rgba(163, 166, 166, 0.5) 0%,
     rgba(227, 225, 220, 0.5) 100%
-  );
-  /* background: linear-gradient(
+  ); */
+  background: linear-gradient(
     0deg,
     rgba(221, 77, 8, 1) 0%,
     rgba(255, 194, 147, 1) 100%
-  ); */
+  );
 
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -184,7 +184,7 @@ button {
 /* Bouton actif ou sélectionné */
 .icon.active {
   height: 2.5rem;
-  background-color: #ff633f;
+  background-color: var(--bg-stoy);
   border-radius: 10px;
 }
 
@@ -209,7 +209,7 @@ button {
 /* item du carousel  */
 .carousel-item {
   min-width: 100%;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   /* height: 80%; */
   padding: 1.5rem;
   /* height: 400px; */
@@ -276,6 +276,6 @@ button {
 }
 
 .img-user {
-  height: 3rem;
+  height: 2.5rem;
   border-radius: 10px;
 }
