@@ -94,6 +94,7 @@ function createdCategory(createCategory) {
   // Création de boucle Each pour générer les catégories
   createCategory.forEach((divCategory) => {
     // Création de la div category
+
     const category = document.createElement("button");
     category.classList.add(".category");
     categories.appendChild(category);
