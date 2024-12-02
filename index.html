@@ -20,7 +20,33 @@
             src="https://seeklogo.com/images/R/reddit-logo-23F13F6A6A-seeklogo.com.png"
             alt="logo_reddit"
           />
-          <img src="/img/loupe.svg" alt="photo_de_loupe" />
+          <nav class="navbar">
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Profil</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Favoris</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Messages</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Notifications</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Monétisation</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Paramètres</a>
+              </li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
         </header>
 
         <!-- Main -->
@@ -59,7 +85,23 @@
                 class="img-user"
               />
               <p class="username">User</p>
-              <p class="likes">Likes 🧡</p>
+              <!-- Ouverture du post -->
+              <button class="open_modal">Comment ✍️</button>
+              <dialog class="post">
+                <img
+                  src="/assets/free-photo-of-noir-et-blanc-nature-mode-homme.jpeg"
+                  alt="Photo de profil de l'utilisateur"
+                  class="pp_post"
+                />
+                <h2 class="username_post">Username</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  atque non odit, laboriosam minima soluta autem aliquam amet
+                  obcaecati, quis eum, quisquam consequatur dolor nesciunt.
+                  Autem quisquam rem voluptate dolorum?
+                </p>
+                <button class="close_modal">Fermer</button>
+              </dialog>
               <a class="live">Live 🔴</a>
             </div>
           </section>
