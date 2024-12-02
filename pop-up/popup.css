@@ -1,0 +1,29 @@
+/* Import de la font */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Configuration */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  max-width: 100%;
+  /* outline: 1px solid red; */
+}
+
+a,
+button,
+li {
+  cursor: pointer;
+  all: unset;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Variables */
+:root {
+  --bg-color: #151515;
+  --text-color: white;
+  --bg-stoy: #333436;
+  --bgcolor-category: #ff633f;
+}
