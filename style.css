@@ -64,6 +64,76 @@ header > img:last-child {
   margin-right: 0.8rem;
 }
 
+/* Navbar */
+.nav {
+  width: 75%;
+}
+
+.nav-menu {
+  display: flex;
+  position: fixed;
+  left: -100%;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  width: 75%;
+  border-radius: 8px;
+  text-align: left;
+  transition: 0.3s;
+  gap: 2rem;
+  height: 100%;
+  z-index: 1200;
+  background-color: var(--bg-stoy);
+}
+
+.nav-link {
+  color: var(--text-color);
+  font-size: 24px;
+  padding-left: 4rem;
+}
+
+.nav-item {
+  padding-top: 2rem;
+}
+
+.picture_profil {
+  height: 48px;
+  width: 48px;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+.nav-menu.active {
+  left: 0;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  padding-right: 2rem;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 /* Stories */
 .stories {
   display: flex;

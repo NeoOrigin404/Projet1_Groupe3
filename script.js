@@ -1,4 +1,23 @@
-console.log("scrpit chargeé");
+// Ouverture du menu
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+}
+
+// Fermeture du menu
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach((e) => e.addEventListener("click", closeMenu));
+
+function closeMenu() {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}
 
 // Tableau des stories
 const tableauStories = [
@@ -191,7 +210,7 @@ const posts = [
         author: "Gandalf",
         profilPicture: "",
         commentaire: "Je crois que je me suis trompé de film !",
-        likes: 42,
+        likes: 152,
       },
       {
         author: "Général Grievous",
