@@ -1,121 +1,65 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <html lang="fr">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <title>Projet 1 - Groupe 3</title>
-      </head>
-
-      <body>
-        <!-- Header -->
-        <header>
-          <img src="/img/picture_profil.jpg" alt="photo_de_profile" />
-          <img
-            src="https://seeklogo.com/images/R/reddit-logo-23F13F6A6A-seeklogo.com.png"
-            alt="logo_reddit"
-          />
-          <nav class="navbar">
-            <ul class="nav-menu">
-              <li class="nav-item">
-                <a href="#" class="nav-link">Profil</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Favoris</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Messages</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Notifications</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Monétisation</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Paramètres</a>
-              </li>
-            </ul>
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-          </nav>
-        </header>
-
-        <!-- Main -->
-        <main>
-          <!-- Stories -->
-          <div class="stories">
-            <div class="story_picture">
-              <img
-                class="photo"
-                src="url('https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp')"
-                alt="Story picture"
-              />
-              <p class="username">John Doe</p>
-            </div>
-          </div>
-
-          <!-- Categories -->
-          <div class="categories">
-            <!-- Créer button au lieu de div -->
-            <button class="category">
-              <h2 class="category_name">Popular</h2>
-            </button>
-          </div>
-          <!-- structure du carrousel -->
-          <section class="section_carousel">
-            <div class="carousel-track">
-              <img src="/assets/img_content.jpg" class="carousel-item" alt="" />
-            </div>
-            <!-- pagination-->
-            <div class="carousel-pagination"></div>
-          </section>
-          <section class="under-content">
-            <div class="stats">
-              <img
-                src="assets/free-photo-of-noir-et-blanc-nature-mode-homme.jpeg"
-                class="img-user"
-              />
-              <p class="username">User</p>
-              <!-- Ouverture du post -->
-              <button class="open_modal">Comment ✍️</button>
-              <dialog class="post">
-                <img
-                  src="/assets/free-photo-of-noir-et-blanc-nature-mode-homme.jpeg"
-                  alt="Photo de profil de l'utilisateur"
-                  class="pp_post"
-                />
-                <h2 class="username_post">Username</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  atque non odit, laboriosam minima soluta autem aliquam amet
-                  obcaecati, quis eum, quisquam consequatur dolor nesciunt.
-                  Autem quisquam rem voluptate dolorum?
-                </p>
-                <button class="close_modal">Fermer</button>
-              </dialog>
-              <a class="live">Live 🔴</a>
-            </div>
-          </section>
-        </main>
-        <div class="bottom-menu">
-          <button><img src="/assets/home.svg" class="icon active" /></button>
-          <button><img src="/assets/message_icon.png" class="icon" /></button>
-          <button><img src="/assets/plus_icon.svg" class="icon" /></button>
-          <button><img src="/assets/notif_icon.svg" class="icon" /></button>
-          <button><img src="/assets/rocket_icon.png" class="icon" /></button>
-        </div>
-
-        <script src="/script.js"></script>
-      </body>
-    </html>
+    <link rel="stylesheet" href="script.js" />
+    <title>Projet 1 - Groupe 3</title>
   </head>
+
+  <body>
+    <header>
+      <img src="image_oiseaux.jpg" alt="photo_de_profile" />
+      <img
+        src="https://seeklogo.com/images/R/reddit-logo-23F13F6A6A-seeklogo.com.png"
+        alt="logo_reddit"
+      />
+      <img src="loupe_blanche.svg" alt="photo_de_loupe" />
+    </header>
+
+    <div class="stories">
+      <div class="story_picture">
+        <img
+          src="pdp.png"
+          alt="photo_de_profile"
+          alt="photo_de_profile"
+          class="photo"
+        />
+        <p class="username">John Padawan</p>
+      </div>
+      <!-- <div class="stories_picture">
+            <img src="image_oiseaux.jpg"
+                alt="photo_de_profile" alt="">
+            <p>John Padawan</p>
+        </div>
+        <div class="stories_picture">
+            <img src="pdp.png"
+                alt="photo_de_profile" alt="">
+            <p>John Padawan</p>
+        </div>
+        <div class="stories_picture">
+            <img src="image_oiseaux.jpg"
+                alt="photo_de_profile" alt="">
+            <p>John Padawan</p>
+        </div> -->
+    </div>
+
+    <div class="categories">
+      <div class="category">
+        <h2>Most popular</h2>
+      </div>
+      <div class="category">
+        <h2>Fashion</h2>
+      </div>
+      <div class="category">
+        <h2>Gaming</h2>
+      </div>
+      <div class="category">
+        <h2>Sport</h2>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
 </html>
