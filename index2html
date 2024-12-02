@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="divbarre">
+            <img src="Images/free-photo-of-noir-et-blanc-nature-mode-homme.jpeg" class="image">
+            <div class="barre">
+                <span class="username">Username</span>
+                <span class="follower">1,2 k follower</span>
+            </div>
+            <button class="live">Live</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
