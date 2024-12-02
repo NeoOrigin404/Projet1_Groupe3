@@ -104,10 +104,12 @@ const posts = [
         commentaire: "May the Force be with you",
         likes: 3,
       },
+      {
         author: "Gandalf",
         profilPicture: "",
         commentaire: "Je crois que je me suis trompé de film !",
         likes: 42,
+      },
       {
         author: "Général Grievous",
         profilPicture: "",
