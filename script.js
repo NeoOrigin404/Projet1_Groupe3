@@ -266,3 +266,19 @@ const closeModalButton = document.querySelector(".close_modal");
 
 openModalButton.addEventListener("click", () => dialog.showModal());
 closeModalButton.addEventListener("click", () => dialog.close());
+
+// test light mode dark mode
+
+const body = document.querySelector("body");
+const lightButton = document.querySelector(".light-button");
+const darkButton = document.querySelector(".dark-button");
+
+lightButton.addEventListener("click", () => {
+  body.classList.remove("darkmode");
+  body.classList.add("lightmode");
+});
+
+darkButton.addEventListener("click", () => {
+  body.classList.remove("lightmode");
+  body.classList.add("darkmode");
+});

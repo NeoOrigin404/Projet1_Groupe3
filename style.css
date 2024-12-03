@@ -47,12 +47,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 3rem;
 }
 
 header > img {
   width: 40px;
   height: auto;
+}
+
+#logo {
+  height: 100px;
+  width: 100px;
 }
 
 header > img:first-child {
@@ -204,7 +208,7 @@ h2.active {
 /* BARRE DE MENU */
 .bottom-menu {
   position: fixed;
-  bottom: 2rem;
+  bottom: 1rem;
   width: 22rem;
   left: 0;
   right: 0;
@@ -345,6 +349,7 @@ button {
 
 dialog {
   height: 87%;
+  transition: ease 0.5s;
 }
 
 .pp_post {
@@ -368,6 +373,10 @@ dialog {
   }
 }
 @media screen and (min-width: 768px) {
+  #logo {
+    height: 150px;
+    width: 150px;
+  }
   .carousel-item {
     width: auto;
     height: 500px;
@@ -412,7 +421,7 @@ dialog {
   }
   .stories {
     justify-content: center;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
     gap: 2rem;
   }
 
@@ -431,7 +440,7 @@ dialog {
     font-size: 1.2rem;
   }
   .categories {
-    padding-top: 2rem;
+    padding-top: 1rem;
     gap: 1rem;
   }
 
@@ -441,15 +450,20 @@ dialog {
 }
 
 @media screen and (min-width: 1024px) {
+  #logo {
+    height: 175px;
+    width: 175px;
+  }
   .carousel-item {
     width: 100%;
-    height: 600px;
+    height: 500px;
+    object-fit: cover;
   }
   .stats {
     width: 600px;
     height: 4rem;
     font-size: 1.8rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   .img-user {
     height: 3.5rem;
@@ -482,7 +496,7 @@ dialog {
     height: 3.5rem;
   }
   .section_carousel {
-    margin-top: 3rem;
+    margin-top: 0.5rem;
   }
   header > img {
     width: 80px;
@@ -499,7 +513,7 @@ dialog {
   }
   .stories {
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 1rem;
     gap: 3rem;
   }
 
@@ -519,7 +533,7 @@ dialog {
   }
   /* Categories */
   .categories {
-    padding-top: 2.5rem;
+    padding-top: 2rem;
     gap: 2rem;
   }
 
@@ -530,4 +544,18 @@ dialog {
   body {
     overflow: scroll;
   } */
+}
+
+/* test light / dark mode  */
+
+.lightmode {
+  background-color: whitesmoke;
+  color: #151515;
+  transition: 0.5s ease;
+}
+
+.darkmode {
+  background-color: var(--bg-color);
+  color: #fff;
+  transition: 0.5s ease;
 }
