@@ -1,18 +1,16 @@
 // Like button
-const like = document.querySelector(".like-btn");
+const heartIcon = document.querySelector(".heart-icon");
+const likesAmountLabel = document.querySelector(".likes-amount");
 
-let countLike = 0;
-like.addEventListener("click", () => {
-  if (countLike === 0) {
-    like.classList.toggle("anim-like-btn");
-    countLike = 1;
-    like.style.backgroundPosition = "right";
+let likesAmount = 7;
+
+heartIcon.addEventListener("click", () => {
+  heartIcon.classList.toggle("liked");
+  if (heartIcon.classList.contains("liked")) {
+    likesAmount++;
   } else {
-    countLike = 0;
-    like.style.backgroundPosition = "left";
+    likesAmount--;
   }
-});
 
-like.addEventListener("animationned", () => {
-  like.classList.toggle("anim-like-btn");
+  likesAmountLabel.innerHTML = likesAmount;
 });
