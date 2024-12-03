@@ -1,0 +1,61 @@
+/* Import de la font */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Configuration */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  max-width: 100%;
+  /* outline: 1px solid red; */
+}
+
+a,
+button,
+li {
+  cursor: pointer;
+}
+
+/* Variables */
+:root {
+  --bg-color: #151515;
+  --text-color: white;
+  --bg-stoy: #333436;
+  --bgcolor-category: #ff633f;
+}
+
+.panneau {
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width: 500px;
+  padding: 15px;
+  position: relative;
+  margin: 100px auto 0;
+}
+
+.like-btn {
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  background-image: url(https://abs.twimg.com/a/1446542199/img/t1/web_heart_animation.png);
+  position: absolute;
+  top: 100%;
+  left: 92%;
+  transform: translate(-50%, -50%);
+}
+
+.anim-like-btn {
+  animation-name: anim-like-btn;
+  animation-duration: 0.8s;
+  animation-timing-function: steps(28);
+}
+
+@keyframes anim-like-btn {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
