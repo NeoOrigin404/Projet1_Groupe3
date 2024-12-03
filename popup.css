@@ -1,0 +1,104 @@
+/* Import de la font */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Configuration */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  max-width: 100%;
+  /* outline: 1px solid red; */
+}
+
+a,
+button,
+li {
+  cursor: pointer;
+  all: unset;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Variables */
+:root {
+  --bg-color: #151515;
+  --text-color: white;
+  --bg-stoy: #333436;
+  --bgcolor-category: #ff633f;
+}
+
+dialog {
+  background-color: var(--bg-color);
+}
+
+.close_modal {
+    color: var(--text-color);
+    font-size: 24px;
+    cursor: pointer;
+}
+.close_modal:hover {
+}
+
+.user-post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem;
+}
+
+.user-img {
+    display: flex;
+    background-color: red;
+    align-items: center;
+    color: var(--text-color);
+    gap: 0.6rem;
+    font-size: 12px;
+}
+
+.pp_post {
+    height: 48px;
+    width: 48px;
+    border-radius: 16px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-post {
+    margin: 0 auto;
+    color: var(--text-color);
+    padding-bottom: 2rem;
+    font-weight: normal;
+}
+.haut-page {
+    display: flex;
+    margin: 0 2.5rem;
+}
+.img-post {
+    display: flex;
+    border-radius: 16px;
+}
+.interactions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0.8rem;
+    gap: 2rem;
+    color: var(--text-color);
+}
+
+.like {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    gap: 0.3rem;
+}
+
+.bas-page {
+    display: flex;
+    background-color: aqua;
+}
