@@ -63,12 +63,12 @@ function addNewComment() {
   }
 
   const myComment = {
-    img: "/assets/free-photo-of-noir-et-blanc-nature-mode-homme.jpeg", // Photo de profil de l'utilisateur
-    username: "Moi", // Remplace par le vrai nom de l'utilisateur si disponible
+    img: "/assets/free-photo-of-noir-et-blanc-nature-mode-homme.jpeg",
+    username: "Moi",
     comment: newComment,
   };
 
-  userComments.push(myComment); // Ajoute le commentaire au début du tableau
+  userComments.push(myComment); // Ajoute le commentaire à la fin du tableau
   createdComment(userComments); // Regénère la section des commentaires
   messageInput.value = ""; // Vide la zone de saisie
 }
