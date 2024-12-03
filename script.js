@@ -22,20 +22,20 @@ function closeMenu() {
 // Tableau des stories
 const tableauStories = [
   {
-    name: "John Doe",
-    img: "https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp",
+    name: "Obi-Wan",
+    img: "https://nsabers.fr/cdn/shop/articles/metamind0000_Obi-Wan_Kenobi._Holding_a_lightsaber._Super_realis_918963db-12a7-4790-b95f-db9a4389dffd.png?v=1705395130",
   },
   {
-    name: "Eva Doe",
-    img: "https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ=",
+    name: "Ahsoka",
+    img: "https://nsabers.es/cdn/shop/articles/opolar_httpss.mj.runq7E9yDWLvjk_A_super_realistic_scene_illus_7294495f-1a2d-4626-aa61-e4680230c385_2.png?v=1722329508",
   },
   {
-    name: "Rebecca Doe",
-    img: "https://www.perfocal.com/blog/content/images/2021/01/Perfocal_17-11-2019_TYWFAQ_100_standard-3.jpg",
+    name: "Gandalf",
+    img: "https://lh4.googleusercontent.com/proxy/HKsXEex12rF6cSoS7WhfUFFQ09pfBE8fMpgf9CoDZAyfFaGQnm1hi-75_Yn4tEA07RiDGXO-9yoyrtRG-DWJaLvXVtrW2cOJCjOt9WT8U8FFt1IKDidx",
   },
   {
-    name: "Killian Doe",
-    img: "https://t4.ftcdn.net/jpg/06/08/55/73/360_F_608557356_ELcD2pwQO9pduTRL30umabzgJoQn5fnd.jpg",
+    name: "Rogue",
+    img: "https://images.ctfassets.net/usf1vwtuqyxm/toxlayPDePtX8yx2wvWun/b65f6acd9087031b1ff39461d8f22d0a/severus-snape_2_1800x1248.png",
   },
 ];
 
@@ -73,16 +73,16 @@ createdStory(tableauStories);
 // Tableau des catégories
 const tableauCategories = [
   {
-    name: "Popular",
+    name: "Frogs",
   },
   {
     name: "Wilders",
   },
   {
-    name: "Dev",
+    name: "Hogwarts",
   },
   {
-    name: "Gaming",
+    name: "Force",
   },
 ];
 
@@ -169,11 +169,11 @@ const imgCarousel = document.querySelector(".section_carousel");
 const publicationUsers = [
   {
     type: "Wilders",
-    picture: "./assets/img_content2.jpg",
+    picture: "./assets/grogu_2.jpg",
   },
   {
     type: "gaming",
-    picture: "./assets/img_content3.jpg",
+    picture: "./assets/grogu_3.jpg",
   },
 ];
 
@@ -266,3 +266,19 @@ const closeModalButton = document.querySelector(".close_modal");
 
 openModalButton.addEventListener("click", () => dialog.showModal());
 closeModalButton.addEventListener("click", () => dialog.close());
+
+// test light mode dark mode
+
+const body = document.querySelector("body");
+const lightButton = document.querySelector(".light-button");
+const darkButton = document.querySelector(".dark-button");
+
+lightButton.addEventListener("click", () => {
+  body.classList.remove("darkmode");
+  body.classList.add("lightmode");
+});
+
+darkButton.addEventListener("click", () => {
+  body.classList.remove("lightmode");
+  body.classList.add("darkmode");
+});
