@@ -82,6 +82,7 @@
                 <p class="username">Grogu</p>
                 <!-- Ouverture du post -->
                 <button class="open_modal">Comment ✍️</button>
+                <a class="live">Live 🔴</a>
                 <dialog class="container-post">
                     <!-- Header du post -->
                     <div class="user-post">
@@ -122,31 +123,31 @@
                         </div>
                         <!-- Section commentaires -->
                         <div class="bas-page">
-                            <div class="commentaire">
+                            <div class="contain-commentaire">
                                 <div class="com">
-                                    <img src="/assets/gorgu_1.jpeg" alt="Photo de profil du user qui comment"
-                                        class="pp-com">
-                                    <p class="user-comment">Super photo ! Incroyable de fou malade !</p>
+                                    <img src="/assets/free-photo-of-noir-et-blanc-nature-mode-homme.jpeg"
+                                        alt="Photo de profil du user qui comment" class="pp-com">
+                                    <div class="commentaire-user">
+                                        <div class="user-com">John Doe</div>
+                                        <p class="user-comment">Super photo ! Incroyable de fou malade ! Génial de fou
+                                        </p>
+                                    </div>
                                 </div>
-                                <!-- <div class="call-to-action">
-                                    <p class="jaime">J'aime</p>
-                                    <p class="repondre">Répondre</p>
-                                    <p class="likes">62 Likes</p>
-                                </div> -->
-                            </div>
-                            <!-- Notre commentaire -->
-                            <div class="notre-commentaire">
-                                <img src="/img/picture_profil.jpg" alt="" class="notre-photo">
-                                <div class="ecrire">
-                                    <p>Ecrivrez un commentaire...</p>
-                                    <img src="/assets/send.png" alt="Send message" class="send-message">
-                                </div>
-                            </div>
-                        </div>
                     </section>
-                </dialog>
-                <a class="live">Live 🔴</a>
+
+                    <!-- Mon commentaire -->
+                    <div class="contain-moncom">
+                        <img src="/assets/free-photo-of-noir-et-blanc-nature-mode-homme.jpeg" alt="Ma photo de profil"
+                            class="ma-photo">
+                        <div class="message">
+                            <input type="text" class="mon-message" placeholder="Écrivez votre message...">
+                            <input type="button" value="Envoyer" class="btn-send">
+                        </div>
+                    </div>
             </div>
+        </section>
+        </dialog>
+        </div>
         </section>
     </main>
     <!-- Menu flottant -->
