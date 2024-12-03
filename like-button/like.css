@@ -1,0 +1,40 @@
+.heart-icon {
+  height: 100px;
+  width: 100px;
+  background: url("/assets/heart.png");
+  background-position: left;
+  cursor: pointer;
+  position: absolute;
+}
+
+.heart-icon.liked {
+  animation: like-anim 1s steps(28) forwards;
+}
+
+@keyframes like-anim {
+  to {
+    background-position: right;
+  }
+}
+
+.heart-bg {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 100ms ease;
+}
+
+.like-button {
+  display: flex;
+  align-items: center;
+}
+
+.likes-amount {
+  font-size: 20px;
+  color: #888;
+  font-weight: 900;
+  margin-left: 6px;
+}
