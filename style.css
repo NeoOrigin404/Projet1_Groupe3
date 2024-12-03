@@ -421,7 +421,7 @@ dialog {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0 0 1rem 0;
   gap: 2rem;
   color: var(--text-color);
 }
@@ -460,6 +460,48 @@ dialog {
   gap: 0.3rem;
 }
 
+/* Like button */
+.heart-icon {
+  height: 100px;
+  width: 100px;
+  background: url("/assets/heart.png");
+  background-position: left;
+  cursor: pointer;
+  position: absolute;
+}
+
+.heart-icon.liked {
+  animation: like-anim 1s steps(28) forwards;
+}
+
+@keyframes like-anim {
+  to {
+    background-position: right;
+  }
+}
+
+.heart-bg {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 100ms ease;
+}
+
+.like-button {
+  display: flex;
+  align-items: center;
+}
+
+.likes-amount {
+  font-size: 20px;
+  color: var(--text-color);
+  font-weight: normal;
+}
+
+/* Bas de page */
 .bas-page {
   background-color: var(--bg-stoy);
   border-radius: 16px;
