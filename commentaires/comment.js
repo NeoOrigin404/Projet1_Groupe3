@@ -51,3 +51,30 @@ function createdComment(createComment) {
 
 // Execution de la fonction
 createdComment(userComments);
+
+// Ajouter un commentaire qui ira dans la div contain-commentaire
+function addNewComment() {
+  const messageInput = document.querySelector(".mon-message");
+  const newComment = messageInput.value.trim();
+
+  if (newComment === "") {
+    alert("Veuillez écrire un message avant d'envoyer.");
+    return;
+  }
+
+  const myComment = {
+    img: "/assets/free-photo-of-noir-et-blanc-nature-mode-homme.jpeg", // Photo de profil de l'utilisateur
+    username: "Moi", // Remplace par le vrai nom de l'utilisateur si disponible
+    comment: newComment,
+  };
+
+  userComments.push(myComment); // Ajoute le commentaire au début du tableau
+  createdComment(userComments); // Regénère la section des commentaires
+  messageInput.value = ""; // Vide la zone de saisie
+}
+
+// Ajouter un événement au bouton Envoyer
+document.querySelector(".btn-send").addEventListener("click", addNewComment);
+
+// Charger les commentaires existants au démarrage
+createdComment(userComments);
