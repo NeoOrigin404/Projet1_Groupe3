@@ -336,6 +336,23 @@ function createdComment(createComment) {
     userComment.classList.add("user-comment");
     userComment.textContent = divComment.comment;
     commentaireUser.appendChild(userComment);
+
+    // Création des interactions des commentaires
+    const interactionCom = document.createElement("div");
+    interactionCom.classList.add("interaction-com");
+    containCommentaire.appendChild(interactionCom);
+
+    // Création du like commentaire
+    const likeCom = document.createElement("p");
+    likeCom.classList.add("like-com");
+    likeCom.textContent = "J'aime";
+    interactionCom.appendChild(likeCom);
+
+    // Création de la réponse du commentaire
+    const reponseCom = document.createElement("p");
+    reponseCom.classList.add("com-com");
+    reponseCom.textContent = "Répondre";
+    interactionCom.appendChild(reponseCom);
   });
 }
 
@@ -354,7 +371,7 @@ function addNewComment() {
 
   const myComment = {
     img: "/assets/gorgu_1.jpeg",
-    username: "Grugo",
+    username: "Grogu",
     comment: newComment,
   };
 

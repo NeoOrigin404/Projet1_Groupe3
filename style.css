@@ -429,6 +429,7 @@ dialog {
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
   gap: 0.2rem;
 }
 
@@ -439,20 +440,20 @@ dialog {
 }
 
 .comment_1 {
-  height: 48px;
-  width: 48px;
+  height: 40px;
+  width: 40px;
   gap: 0.3rem;
 }
 
 .favoris_1 {
-  height: 48px;
-  width: 48px;
+  height: 36px;
+  width: 36px;
   gap: 0.3rem;
 }
 
 .share_1 {
-  height: 48px;
-  width: 48px;
+  height: 40px;
+  width: 40px;
   gap: 0.3rem;
 }
 
@@ -514,7 +515,6 @@ input[type="button"] {
 .contain-commentaire {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 .pp-com {
@@ -546,6 +546,16 @@ input[type="button"] {
 
 .user-comment {
   color: var(--text-color);
+}
+
+.interaction-com {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: var(--text-color);
+  font-size: 12px;
+  margin-bottom: 0.5rem;
+  opacity: 80%;
 }
 
 /* Notre commentaire */
