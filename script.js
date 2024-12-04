@@ -287,7 +287,7 @@ darkButton.addEventListener("click", () => {
 const heartIcon = document.querySelector(".heart-icon");
 const likesAmountLabel = document.querySelector(".likes-amount");
 
-let likesAmount = 7;
+let likesAmount = 41;
 
 heartIcon.addEventListener("click", () => {
   heartIcon.classList.toggle("liked");
@@ -303,14 +303,34 @@ heartIcon.addEventListener("click", () => {
 // Tablea des commentaires
 const userComments = [
   {
-    img: "/assets/free-photo-of-noir-et-blanc-nature-mode-homme.jpeg",
-    username: "John Doe",
-    comment: "Super photo !",
+    img: "https://imgsrc.cineserie.com/2020/11/star-wars-a-quoi-ressemblent-les-jawas-sous-leur-costume.jpeg?ver=1",
+    username: "Jawa",
+    comment: "Utini !",
   },
   {
-    img: "https://i.etsystatic.com/40317824/r/il/7f2fd8/4934631807/il_fullxfull.4934631807_ju2q.jpg",
-    username: "Grogu",
-    comment: "May the Force be with you",
+    img: "https://i.pinimg.com/736x/64/7e/24/647e24bc03fd9fd5847e5cd49ee37d72.jpg",
+    username: "Hermione",
+    comment: "It's Leviosa, not Leviosaaaaa",
+  },
+  {
+    img: "https://originalcup.fr/cdn/shop/files/P6_a7ce2898-0979-471a-8eb1-82c3bf8197d8_800x.jpg?v=1705413137",
+    username: "Jigsaw",
+    comment: "I want to play a game",
+  },
+  {
+    img: "https://pbs.twimg.com/profile_images/3034048137/ff82f53ff48e228c3866d19806987354_400x400.jpeg",
+    username: "Gollum",
+    comment: "Mon précieux",
+  },
+  {
+    img: "https://www.seguret-decoration.fr/57548-large_default/panoramique-the-mandalorian-gunslingers-collection-into-wonderland-komar-200x250cm-iadx4-095.jpg",
+    username: "The Mandalorian",
+    comment: "This is the Way",
+  },
+  {
+    img: "https://imgcdn.stablediffusionweb.com/2024/9/15/74bfaded-4966-4cfe-9e6e-da76f55037ac.jpg",
+    username: "Jack Sparrow",
+    comment: "Vous n'auriez pas du rhum ici ?",
   },
 ];
 
@@ -365,8 +385,8 @@ function addNewComment() {
   }
 
   const myComment = {
-    img: "/assets/free-photo-of-noir-et-blanc-nature-mode-homme.jpeg",
-    username: "Moi",
+    img: "/assets/gorgu_1.jpeg",
+    username: "Grugo",
     comment: newComment,
   };
 
@@ -375,8 +395,21 @@ function addNewComment() {
   messageInput.value = ""; // Vide la zone de saisie
 }
 
+// Fonction pour gérer la touche Entrée dans la zone de texte
+function handleKeyDown(event) {
+  if (event.key === "Enter") {
+    event.preventDefault(); // Empêche le comportement par défaut (saut de ligne)
+    addNewComment(); // Appelle la fonction d'ajout de commentaire
+  }
+}
+
 // Ajouter un événement au bouton Envoyer
 document.querySelector(".btn-send").addEventListener("click", addNewComment);
+
+// Ajouter un événement keydown pour envoyer avec Entrée
+document
+  .querySelector(".mon-message")
+  .addEventListener("keydown", handleKeyDown);
 
 // Charger les commentaires existants au démarrage
 createdComment(userComments);
