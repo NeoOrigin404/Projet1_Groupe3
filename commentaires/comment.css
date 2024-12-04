@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button,
+img {
+  cursor: pointer;
+}
+
+/* Section commentaire utilisateur */
+.general {
+  margin: 2rem;
+}
+
+.contain-commentaire {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pp-com {
+  height: 48px;
+  width: 48px;
+  border-radius: 16px;
+}
+
+.com {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.commentaire-user {
+  background-color: gray;
+  border-radius: 16px;
+  padding: 0.8rem;
+  max-width: 35ch;
+  /* Flex grow permet de remplir l'espace manquant de la div  */
+  flex-grow: 1;
+}
+
+.user-com {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Notre commentaire */
+.contain-moncom {
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+}
+
+.ma-photo {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  margin-right: 0.2rem;
+}
+
+.mon-message {
+  border-radius: 16px;
+  padding: 1rem;
+}

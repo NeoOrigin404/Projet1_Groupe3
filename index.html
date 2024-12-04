@@ -2,18 +2,53 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js" />
     <title>Projet 1 - Groupe 3</title>
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <img src="/img/picture_profil.jpg" alt="photo_de_profile">
-        <img src="https://seeklogo.com/images/R/reddit-logo-23F13F6A6A-seeklogo.com.png" alt="logo_reddit">
-        <img src="/img/loupe.svg" alt="photo_de_loupe">
+        <img src="/assets/gorgu_1.jpeg" alt="photo_de_profile" />
+        <img src="/assets/logofondnoir.png" alt="logo" id="logo" />
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Profil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Favoris</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Messages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Notifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Monétisation</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Paramètres</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link light-button">Light</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link dark-button">Dark</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
 
     <!-- Main -->
@@ -21,9 +56,7 @@
         <!-- Stories -->
         <div class="stories">
             <div class="story_picture">
-                <img class="photo"
-                    src="url('https://a.storyblok.com/f/191576/1200x800/a3640fdc4c/profile_picture_maker_before.webp')"
-                    alt="Story picture">
+                <img class="photo" src="#" alt="Story picture" />
                 <p class="username">John Doe</p>
             </div>
         </div>
@@ -38,22 +71,86 @@
         <!-- structure du carrousel -->
         <section class="section_carousel">
             <div class="carousel-track">
-                <img src="/assets/img_content.jpg" class="carousel-item" alt="" />
-                <img src="/assets/img_content2.jpg" class="carousel-item" alt="" />
-                <img src="/assets/img_content3.jpg" class="carousel-item" alt="" />
+                <img src="/assets/gorgu_1.jpeg" class="carousel-item" alt="" />
             </div>
             <!-- pagination-->
             <div class="carousel-pagination"></div>
         </section>
         <section class="under-content">
             <div class="stats">
-                <img src="assets/free-photo-of-noir-et-blanc-nature-mode-homme.jpeg" class="img-user" />
-                <p class="username">User</p>
-                <p class="likes">Likes 🧡</p>
+                <img src="assets/gorgu_1.jpeg" class="img-user" />
+                <p class="username">Grogu</p>
+                <!-- Ouverture du post -->
+                <button class="open_modal">Comment ✍️</button>
                 <a class="live">Live 🔴</a>
+                <dialog class="container-post">
+                    <!-- Header du post -->
+                    <div class="user-post">
+                        <div class="user-img">
+                            <img src="/assets/gorgu_1.jpeg" alt="Photo de profil de l'utilisateur" class="pp_post">
+                            <h2 class="username_post">Grogu</h2>
+                        </div>
+                        <button class="close_modal">X</button>
+                    </div>
+                    <!-- Description du post -->
+                    <section class="post">
+                        <h3 class="description-post">May the Force be with you !</h3>
+                        <!-- Contenu du post + intéractions -->
+                        <div class="haut-page">
+                            <img src="/assets/gorgu_1.jpeg" alt="Contenu du post" class="img-post">
+                            <div class="interactions">
+                                <div class="like-button">
+                                    <div class="heart-bg">
+                                        <div class="heart-icon"></div>
+                                    </div>
+                                    <div class="likes-amount">41</div>
+                                </div>
+                                <div class="comment">
+                                    <img src="/assets/comment.svg" alt="Comment" class="comment_1">
+                                    <p>6</p>
+                                </div>
+                                <div class="favoris">
+                                    <img src="/icon/favoris.svg" alt="Favoris" class="favoris_1">
+                                </div>
+                                <div class="share">
+                                    <img src="/assets/share.svg" alt="Share" class="share_1">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Section commentaires -->
+                        <div class="bas-page">
+                            <div class="contain-commentaire">
+                                <div class="com">
+                                    <img src="/assets/free-photo-of-noir-et-blanc-nature-mode-homme.jpeg"
+                                        alt="Photo de profil du user qui comment" class="pp-com">
+                                    <div class="commentaire-user">
+                                        <div class="user-com">John Doe</div>
+                                        <p class="user-comment">Super photo ! Incroyable de fou malade ! Génial de fou
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="interaction-com">
+                                    <p class="like-com">J'aime</p>
+                                    <p class="com-com">Répondre</p>
+                                </div>
+                            </div>
+                    </section>
+
+                    <!-- Mon commentaire -->
+                    <div class="contain-moncom">
+                        <img src="/assets/gorgu_1.jpeg" alt="Ma photo de profil" class="ma-photo">
+                        <div class="message">
+                            <input type="text" class="mon-message" placeholder="Écrivez un commentaire...">
+                            <input type="button" value="Envoyer" class="btn-send">
+                        </div>
+                    </div>
             </div>
         </section>
+        </dialog>
+        </div>
+        </section>
     </main>
+    <!-- Menu flottant -->
     <div class="bottom-menu">
         <button><img src="/assets/home.svg" class="icon active" /></button>
         <button><img src="/assets/message_icon.png" class="icon" /></button>
@@ -62,7 +159,8 @@
         <button><img src="/assets/rocket_icon.png" class="icon" /></button>
     </div>
 
-    <script src="/script.js"></script>
+    <!-- Script JS -->
+    <script src="/script.js" defer></script>
 </body>
 
 </html>
